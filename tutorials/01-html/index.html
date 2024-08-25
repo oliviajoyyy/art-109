@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tut</title>
+    <meta name="description" content="html tutorial 01">
+</head>
+
+<body>
+    <header>
+        <h1 contenteditable="true" draggable="true">HTML FOR US BY US</h1>
+        <nav>
+            <ul>
+                <li><a href="#cat">Cat</a></li>
+                <li><a href="#dog">Dog</a></li>
+                <li><a href="#owl">Owl</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="images/cat-owl.jpg" alt="image of a cat next to an owl">
+            <img src="images/cat-owl.jpg" alt="image of a cat next to an owl">
+        </div>
+    </header>
+    <main>
+        <section id="cat" class="blue-section">
+            <h2>MEOW</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quasi veritatis ab sed odio maxime,
+                praesentium sunt deserunt officiis corporis fuga eius, assumenda aliquam nam ratione nisi quam
+                asperiores illum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quasi veritatis ab sed odio maxime,
+                praesentium sunt deserunt officiis corporis fuga eius, assumenda aliquam nam ratione nisi quam
+                asperiores illum!</p>
+            <div>
+                <label for="cat-color">Pick a color for the cat:</label>
+                <input type="color" id="cat-color" name="cat-color" value="#e48125" />
+            </div>
+            <div>
+                <label for="cat-color2">Pick a second color for the cat:</label>
+                <input type="color" id="cat-color2" name="cat-color2" value="#a39e99" />
+            </div>
+            <br>
+            <label for="first-progress">1/3 Done</label>
+            <progress id="first-progress" value="33" max="100">
+        </section>
+        <section id="dog">
+            <h2>WOOF</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quasi veritatis ab sed odio maxime,
+                praesentium sunt deserunt officiis corporis fuga eius, assumenda aliquam nam ratione nisi quam
+                asperiores illum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quasi veritatis ab sed odio maxime,
+                praesentium sunt deserunt officiis corporis fuga eius, assumenda aliquam nam ratione nisi quam
+                asperiores illum!</p>
+            <label for="dog-breed-input">List as many dog breeds as you can:<br></label>
+            <textarea id="dog-breed-input" rows="10" cols = "50" placeholder="Golden retriever, poodle, maltese, ..."></textarea>
+            <br>
+            <label for="second-progress">2/3 Done</label>
+            <progress id="second-progress" value="67" max="100">
+        </section>
+        <section id="owl">
+            <h2>HOO HOO</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quasi veritatis ab sed odio maxime,
+                praesentium sunt deserunt officiis corporis fuga eius, assumenda aliquam nam ratione nisi quam
+                asperiores illum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quasi veritatis ab sed odio maxime,
+                praesentium sunt deserunt officiis corporis fuga eius, assumenda aliquam nam ratione nisi quam
+                asperiores illum!</p>
+            <details>
+                <summary>Types of owls</summary>
+                <details>
+                    <summary>Barn Owl</summary>
+                    <img src="images/barn-owl.jpeg" alt="close up image of a brown and white barn owl">
+                </details>
+                <details>
+                    <summary>Snowy Owl</summary>
+                    <img src="images/snowy-owl.jpg" alt="image of a white snowy owl standing on a rock">
+                </details>
+                <details>
+                    <summary>Great Horned Owl</summary>
+                    <img src="images/great-horned-owl.jpg" alt="image of a brown and white great horned owl in the forest">
+                </details>
+            </details>
+            <br>
+            <label for="third-progress">End of Page!</label>
+            <progress id="third-progress" value="100" max="100">
+        </section>
+    </main>
+    <footer>
+        ~ ~ ~
+    </footer>
+</body>
+
+</html>
