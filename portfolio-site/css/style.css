@@ -1,0 +1,77 @@
+/*
+    COLOR PALLETE
+
+    Ivory       #e3e6e0 or #f2f5f0
+    Black       #252930
+    Khaki       #c0b3a0
+    Blue Gray   #6b8490
+*/
+
+/* GLOBAL STYLES
+------------------------------------*/
+body {
+    background: #e3e6e0;
+    /* color: #f2f1ef; */
+}
+
+/* links */
+a {
+    color: #6b8490;
+}
+
+a:hover {
+    color: #c0b3a0;
+    text-decoration: none;
+}
+
+footer a {
+    color: #c0b3a0
+}
+
+footer a:hover {
+    color: #6b8490;
+    text-decoration: none;
+}
+
+.btn {
+    background:#6b8490;
+    color: #f2f5f0;
+    text-decoration: none;
+}
+
+
+/* HOME
+------------------------------------*/
+.home {
+    background: url(../images/bg-home-office-city.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.9);
+}
+
+
+/* RESUME
+------------------------------------*/
+
+
+/* Profile
+------------------------------------*/
+
+/* Projects
+------------------------------------*/
+
+/* Work Experience
+------------------------------------*/
+
+/* Education
+------------------------------------*/
+
+
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #252930;
+    color: #f2f5f0;
+}
