@@ -9,8 +9,23 @@
 
 /* GLOBAL STYLES
 ------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+ 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
 body {
     background: #e3e6e0;
+    margin: 0;
     /* color: #f2f1ef; */
 }
 
@@ -39,6 +54,12 @@ footer a:hover {
     text-decoration: none;
 }
 
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
 
 /* HOME
 ------------------------------------*/
@@ -54,7 +75,13 @@ footer a:hover {
 
 /* RESUME
 ------------------------------------*/
-
+.resume header::before {
+    background: url(../images/bg-home-office-city.jpg) center;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 375px;
+}
 
 /* Profile
 ------------------------------------*/
@@ -74,4 +101,17 @@ footer a:hover {
 footer {
     background: #252930;
     color: #f2f5f0;
+}
+
+.socials {
+    list-style-type: none; /* removes bullet points */
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img { /* selects img tag in socials class */
+    width: 32px;
 }
