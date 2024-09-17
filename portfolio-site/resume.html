@@ -9,6 +9,7 @@
 </head>
 
 <body class="resume">
+  <a class="btn download-link" href="resume-art109.pdf">Download PDF</a>
   <!-- //  INTRO  // -->
   <header>
     <div class="content-wrapper">
@@ -21,26 +22,26 @@
 
   <main class="content-wrapper">
     <!-- //  PROFILE  // -->
-    <section>
+    <section class="resume-section">
       <!-- Start content edits below this line. -->
       <h2>Profile</h2>
       <p>As a computer science student, I have strong interests in full-stack development for web and desktop
         applications.
         I am proficient in several programming languages including Java, C++, C, and I have project experience working
-        with SQL and noSQL databases.</p>
+        with SQL and NoSQL databases.</p>
       <a href="index.html">Back to homepage</a>
 
       <!-- End content edits here. -->
     </section>
 
     <!-- //  PROJECTS  // -->
-    <section>
+    <section class="resume-section">
       <!-- Start content edits below this line. -->
       <h2>Projects</h2>
       <!-- <p>Optional paragraph for the Projects summary. Delete if not being used.</p> -->
 
       <!-- To add more items, copy this whole <section></section> block-->
-      <section>
+      <section class="project-item">
         <img src="images/project-website-500px.jpg" srcset="images/project-website-1000px.jpg 2x"
           alt="a desk with an computer, tablet, and phone on it" width="" height="">
         <h3>DevMate</h3>
@@ -53,8 +54,26 @@
           <li>Developed back-end logic for the saving and editing features in the application, ensuring persisted
             information in an SQLite database.</li>
           <li>Implemented the singleton design pattern for database connection.</li>
-          <li>Designed an interactive and user-friendly graphical interface using JavaFX and SceneBuilder for front-end
+          <li>Designed an interactive and user-friendly interface using JavaFX and SceneBuilder for front-end
             development.</li>
+        </ul>
+        <!-- link to project -->
+        <a class="btn" href="#" target="_blank">Link to Project</a>
+        <!-- additional links, e.g. newsletter -->
+        <!-- <a href="#" target="_blank">Another link</a> -->
+      </section>
+
+      <section class="project-item">
+        <img src="images/project-website-500px.jpg" srcset="images/project-website-1000px.jpg 2x"
+          alt="a desk with an computer, tablet, and phone on it" width="" height="">
+        <h3>Designing a Database</h3>
+        <p>Designed and implemented a MySQL database to improve data organization, for use in a full-stack web
+          application.</p>
+        <ul>
+          <li>Collaborated in a team of three using strong communication to participate in all aspects of the database
+            life cycle, while quickly adapting to meet new deadlines.</li>
+          <li>Performed normalization on tables and SQL queries to join tables into views for the web application.</li>
+          <li>Composed a formal and detailed report on the project.</li>
         </ul>
         <!-- link to project -->
         <a class="btn" href="#" target="_blank">Link to Project</a>
@@ -66,24 +85,53 @@
     </section>
 
     <!-- //  WORK EXPERIENCE  // -->
-    <section>
+    <section class="resume-section">
       <!-- Start content edits below this line.  -->
       <h2>Work Experience</h2>
       <!-- <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p> -->
 
-      <section>
-        <h3>Instructional Student Assistant (Grader)</h3>
-        <p>San Jose State University</p>
-        <p>Jan 2023 - May 2023</p>
+      <!-- To add more items, copy this whole <section></section> block -->
+      <section class="work-item">
+        <div class="work-details">
+          <h3>Software Developer</h3>
+          <p>Contracted by Digital Media Artists Jonathon Keats and Steve Durie</p>
+          <p>June 2024 - Present</p>
+        </div>
+
+        <div class="work-summary">
+          <p>Full-stack development for the The Future Democracies Laboratory, which is a prototyping software for
+            different governmental systems,
+            using JavaScript, Node.js, Chart.js, p5.js and MongoDB.</p>
+          <p>Key contributions:</p>
+          <ul>
+            <li>Refactored code to implement a model-view-controller (MVC) design pattern.</li>
+            <li>Implemented a MongoDB database using Node.js running over SSL to save persisted user data.</li>
+            <li>Implemented new features and a new user interface for the application according to design mockups.</li>
+            <li>Integrated hardware controls into the software.</li>
+            <li>Data analysis and visualization into 4 different histograms which are automatically updated as new data
+              is added.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="work-item">
+        <div class="work-details">
+          <h3>Instructional Student Assistant (Grader)</h3>
+          <p>San Jose State University</p>
+          <p>Jan 2023 - May 2023</p>
+        </div>
+
         <!-- <p>Job summary goes here. Add as many paragraphs as you need.</p> -->
-        <p>Job summary:</p>
-        <ul>
-          <li>Graded 9 Data Structures & Algorithms (CS 146) homework assignments in a timely manner for 30+
-            undergraduate students over the course of a semester.</li>
-          <li>Analyzed and tested Java programs written by students.</li>
-          <li>Provided positive and constructive feedback on student work to encourage learning and to support their
-            understanding of the material.</li>
-        </ul>
+        <div class="work-summary">
+          <p>Job summary:</p>
+          <ul>
+            <li>Graded 9 Data Structures & Algorithms (CS 146) homework assignments in a timely manner for 30+
+              undergraduate students over the course of a semester.</li>
+            <li>Analyzed and tested Java programs written by students.</li>
+            <li>Provided positive and constructive feedback on student work to encourage learning and to support their
+              understanding of the material.</li>
+          </ul>
+        </div>
       </section>
       <!-- To add more items, copy this whole <section></section> block -->
       <!--
@@ -106,7 +154,7 @@
     </section>
 
     <!-- //  EDUCATION & CERTIFICATIONS  // -->
-    <section>
+    <section class="resume-section">
       <!-- Start content edits below this line.  -->
       <h2>Education</h2>
 
@@ -140,7 +188,8 @@
         <a href="#" target="_blank"><img src="images/icon-logo-twitter.png" alt="My Twitter page"></a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/olivia-joy-cacdac/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn page"></a>
+        <a href="https://www.linkedin.com/in/olivia-joy-cacdac/" target="_blank"><img
+            src="images/icon-logo-linkedin.png" alt="My LinkedIn page"></a>
       </li>
       <li>
         <a href="#" target="_blank"><img src="images/icon-logo-facebook.png" alt="My Facebook page"></a>
