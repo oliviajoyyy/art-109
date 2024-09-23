@@ -31,6 +31,8 @@ html {
      font-size: 1.6rem;
     /* font-size 1.6rem is now the same as 16px */
     line-height: 1.6;
+    background-color: grey;
+    color: white;
  }
  
 header {
@@ -40,8 +42,67 @@ header {
 }
 
 main {
+    /*
     max-width: 800px;
-    margin: 50px auto; /* first val = top/bottom, second val = left/right */
+    margin: 50px auto; *//* first val = top/bottom, second val = left/right */
+}
+
+.image-div {
+    display: inline-block;
+    /* position: absolute;
+    top: 50px;
+    left: 50px; */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+img {
+    width: 40vw;
+    height: auto;
+}
+
+#image0 {
+    position: absolute;
+    top: 200px;
+    left: 20vw;
+}
+
+#image1 {
+    position: absolute;
+    top: 300px;
+    left: 25vw;
+}
+
+#image2 {
+    position: absolute; /* fixed; */
+    top: 420px;
+    left: 150px;
+}
+
+#image3 {
+    position: absolute;
+    top: 600px;
+    left: 5vw;
+}
+
+#image4 {
+    position: absolute;
+    top: 550px;
+    right: 30px;
+}
+
+#image5 {
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+}
+
+#image6 {
+    position: absolute;
+    top: 500px;
+    left: 30vw;
 }
 
 p {
