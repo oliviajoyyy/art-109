@@ -152,7 +152,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:650px) {
     .resume header::before {
         height: 200px;
     }
@@ -160,10 +160,10 @@ footer a:hover {
         font-size: 3rem;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     h3 {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 }
 
@@ -210,7 +210,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:650px) {
     .project-item img {
         width: 100%;
         margin-bottom: 10px;
