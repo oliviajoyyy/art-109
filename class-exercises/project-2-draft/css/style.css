@@ -1,0 +1,98 @@
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    /* font-size 1.6rem is now the same as 16px */
+    line-height: 1.6;
+}
+
+@keyframes stretching {
+    0% {
+      width: 100px;
+      /* height: 100px; */
+      color: transparent;
+      transform: rotate(0deg) scale(1.5);
+    }
+    30% {
+      color: transparent;
+    }
+    100% {
+      width: 70vw; /* 200px */
+      /* height: 100vh; */
+      letter-spacing: .7rem;
+      color: white;
+      transform: rotate(360deg) scale(0.5);
+      background-color: khaki;
+      /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    }
+  }
+  
+  .button {
+    /* animation-name: stretching;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation-timing-function: linear;
+    animation: 10s infinite alternate linear stretching;
+    display: inline-block;
+    background-color: cadetblue;
+    /* vertical-align: bottom; */
+  }
+
+  /* .wrapper {
+    margin-top: 50vh;
+  } */
+  
+ .planet { 
+    width: 100px; 
+    height: 200px; 
+    top: 50px;
+    left: 50px;
+    border-radius: 50%; 
+    background-color: blue; 
+    display: inline-block;
+    animation: 5s infinite linear random-orbit; 
+} 
+
+@keyframes orbit { 
+    0% { 
+        transform: rotate(0deg) translateY(100px) rotate(0deg);
+    } 
+
+    100% { 
+        transform: rotate(360deg) translateY(100px) rotate(-360deg);
+    } 
+} 
+
+@keyframes random-orbit { 
+    0% { 
+        transform: translateY(50vh) rotate(0deg);
+    } 
+
+    100% { 
+        transform: translateY(-50vh) rotate(-360deg);
+    } 
+} 
