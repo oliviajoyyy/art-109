@@ -10,14 +10,18 @@ import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/cont
 import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders/GLTFLoader.js'; // to load 3d models
 
 
-
-// ~~~~~~~~~~~~~~~~Create scene here~~~~~~~~~~~~~~~~
+// Declare global variables
 
 let scene, camera, renderer;
 let cube, torus, torusKnot;
+let sceneContainer = document.querySelector("#scene-container");
+
+// ~~~~~~~~~~~~~~~~Create scene here~~~~~~~~~~~~~~~~
 
 function init() {
     scene = new THREE.Scene();
+    
+    // ------- lights -------
     
     // create light to see 3D model
     const light = new THREE.DirectionalLight(0xffffff, 7); // args white light, strength of light
@@ -37,11 +41,15 @@ function init() {
     const helperLeft = new THREE.DirectionalLightHelper(lightLeft, 5);
     //scene.add(helperLeft); // comment out to hide helper
 
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    // ------- end lights -------
+
+    // make aspect ratio the same as scene container's width height
+    camera = new THREE.PerspectiveCamera(75, sceneContainer.clientWidth / sceneContainer.clientHeight, 0.1, 1000);
     
     renderer = new THREE.WebGLRenderer( {antialias: true});
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    // set size to the size of the div
+    renderer.setSize(sceneContainer.clientWidth, sceneContainer.clientHeight); 
+    sceneContainer.appendChild(renderer.domElement); // append to specific element
     
     // ~~~~~~~~~~~~~~~~ Initiate add-ons ~~~~~~~~~~~~~~~~
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -130,9 +138,9 @@ function animate() {
 }
 
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = sceneContainer.clientWidth / sceneContainer.clientHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(sceneContainer.clientWidth, sceneContainer.clientHeight);
 }
 
 window.addEventListener('resize', onWindowResize, false);
