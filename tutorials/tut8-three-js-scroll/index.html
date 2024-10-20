@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut 8 Three.js</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- use an import map to link to the Three.js CDN -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+        }
+      }
+    </script>
+    
+</head>
+
+
+<body>
+
+    <!-- THREE canvas -->
+    <canvas id="bg"></canvas>
+
+    <!-- PORTFOLIO TEXT -->
+    <header>
+      <div class="content-wrapper">
+        <!-- Start content edits below this line. -->
+        <h1>Olivia Joy Cacdac</h1>
+        <h2>Student at San Jose State University</h2>
+      </div>
+      <!-- End content edits here. -->
+    </header>
+  
+    <main class="content-wrapper">
+      <!-- //  PROFILE  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line. -->
+        <h2>Profile</h2>
+        <p>As a computer science student, I am interested in full-stack development for web and desktop
+          applications.
+          I am proficient in several programming languages including Java, C++, C, and I have project experience working
+          with SQL and NoSQL databases.</p>
+  
+        <!-- End content edits here. -->
+      </section>
+  
+      <!-- //  PROJECTS  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line. -->
+        <h2>Projects</h2>
+        <!-- <p>Optional paragraph for the Projects summary. Delete if not being used.</p> -->
+  
+        <!-- To add more items, copy this whole <section></section> block-->
+        <div class="project-wrapper">
+          
+        <section class="project-item">
+
+          <h3>DevMate</h3>
+          <p>Contributed to various phases of the software development cycle in a team of 3 to develop a Java desktop
+            application
+            which assists developers in documenting bugs and enhancements for their own projects.</p>
+          <ul>
+            <li>Collaborated in a team of three with clear and effective communication, resulting in successful project
+              outcomes.</li>
+            <li>Developed back-end logic for the saving and editing features in the application, ensuring persisted
+              information in an SQLite database.</li>
+            <li>Implemented the singleton design pattern for database connection.</li>
+            <li>Designed an interactive and user-friendly interface using JavaFX and SceneBuilder for front-end
+              development.</li>
+          </ul>
+
+        </section>
+        
+  
+        <section class="project-item">
+
+          <h3>Designing a Database</h3>
+          <p>Designed and implemented a MySQL database to improve data organization, for use in a full-stack web
+            application.</p>
+          <ul>
+            <li>Collaborated in a team of three using strong communication to participate in all aspects of the database
+              life cycle, while quickly adapting to meet new deadlines.</li>
+            <li>Performed normalization on tables and SQL queries to join tables into views for the web application.</li>
+            <li>Composed a formal and detailed report on the project.</li>
+          </ul>
+
+        </section>
+  
+        </div>
+        <!-- End content edits here. -->
+      </section>
+  
+      <!-- //  WORK EXPERIENCE  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line.  -->
+        <h2>Work Experience</h2>
+        <!-- <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p> -->
+  
+        <!-- To add more items, copy this whole <section></section> block -->
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Software Developer</h3>
+            <p>Contracted by Digital Media Artists Jonathon Keats and Steve Durie</p>
+            <p>June 2024 - Present</p>
+          </div>
+  
+          <div class="work-summary">
+            <p>Full-stack development for the The Future Democracies Laboratory, which is a prototyping software for
+              different governmental systems,
+              using JavaScript, Node.js, Chart.js, p5.js and MongoDB.</p>
+            <p>Key contributions:</p>
+            <ul>
+              <li>Refactored code to implement a model-view-controller (MVC) design pattern.</li>
+              <li>Implemented a MongoDB database using Node.js running over SSL to save persisted user data.</li>
+              <li>Implemented new features and a new user interface for the application according to design mockups.</li>
+              <li>Integrated hardware controls into the software.</li>
+              <li>Data analysis and visualization into 4 different histograms which are automatically updated as new data
+                is added.</li>
+            </ul>
+          </div>
+        </section>
+  
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Instructional Student Assistant (Grader)</h3>
+            <p>San Jose State University</p>
+            <p>Jan 2023 - May 2023</p>
+          </div>
+  
+          <!-- <p>Job summary goes here. Add as many paragraphs as you need.</p> -->
+          <div class="work-summary">
+            <p>Job summary:</p>
+            <ul>
+              <li>Graded 9 Data Structures & Algorithms (CS 146) homework assignments in a timely manner for 30+
+                undergraduate students over the course of a semester.</li>
+              <li>Analyzed and tested Java programs written by students.</li>
+              <li>Provided positive and constructive feedback on student work to encourage learning and to support their
+                understanding of the material.</li>
+            </ul>
+          </div>
+        </section>
+        <!-- To add more items, copy this whole <section></section> block -->
+        <!--
+          <section>
+            <h3>Job title</h3>
+            <p>Company Name</p>
+            <p>Date at job</p>
+            <p>Job summary goes here. Add as many paragraphs as you need.</p>
+            <p>Optional list:</p>
+            <ul>
+              <li>Delete this list if you don't need it.</li>
+              <li>Created...</li>
+              <li>Lead...</li>
+              <li>Responsible for...</li>
+            </ul>
+          </section>
+        -->
+  
+        <!-- End content edits here. -->
+      </section>
+  
+      <!-- //  EDUCATION & CERTIFICATIONS  // -->
+      <section class="resume-section">
+        <!-- Start content edits below this line.  -->
+        <h2>Education</h2>
+  
+        <!-- To add more items, copy this whole <section></section> block -->
+        <section class="education-item">
+          <h3>San Jose State University - San Jose</h3>
+          <p>B.S. Computer Science, 2025<br>Minor in Digital Media Art</p>
+          <!-- <p></p> -->
+          <p>Relevant Coursework:</p>
+          <ul>
+            <li>Java Programming</li>
+            <li>Object-Oriented Design</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Server-side Web Programming</li>
+            <li>Introduction to Database Management Systems</li>
+          </ul>
+        </section>
+  
+        <!-- End content edits here. -->
+      </section>
+    </main>
+
+    <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

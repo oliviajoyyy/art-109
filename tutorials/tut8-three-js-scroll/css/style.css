@@ -1,0 +1,15 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header {
+    position: relative;
+    color: cadetblue;
+}
+
+main {
+    position: absolute;
+    color: cadetblue;
+}
