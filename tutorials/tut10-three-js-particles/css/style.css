@@ -1,0 +1,72 @@
+html,
+body {
+    height: 100vh;
+    color: white;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#bg {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    color: cadetblue;
+}
+
+main {
+    position: absolute;
+    color: cadetblue;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.content {
+    display: flex;
+    gap: 5em;
+    width: 100%;
+    padding-top: 3em;
+    position: relative;
+}
+
+.content:before {
+    content: '';
+    position: absolute;
+    top: 0; /* in relation to parent container content */
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    transform: scaleX(1);
+}
+
+h1 {
+    font-size: 4rem;
+    width: 50vw;
+    line-height: 97%;
+    text-align: right;
+}
+
+h1, p {
+    flex-basis: 0; /* 50% 2-colum layout */
+    flex-grow: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* hides everything */
+    /* only what is visible shows up - will be animated to show more */
+}
+
+p {
+    font-size: 1.3rem;
+    width: 40vw;
+}
