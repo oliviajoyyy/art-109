@@ -64,30 +64,6 @@ function init() {
     scene.add(particlesMesh);
 }
 
-// function moveCamera() {
-//     // t is our position on the website
-//     const t = document.body.getBoundingClientRect().top; // gets client viewport mesurements and .top gets how far from top
-//     // change camera position
-//     camera.position.z = t * 0.095; // speed of zoom in, lower value = slower zoom in
-//     camera.position.x = t * 0.01; // larger val moves camera to left (object moves to right side of screen)
-// }
-
-//document.body.onscroll = moveCamera; // bind function to scroll event
-
-//moveCamera();
-
-// function moveObject() {
-//     const t = document.body.getBoundingClientRect().top;
-//     torus.position.x = Math.sin(t/200) * 30; // speed up = decrease # divided by, larger radius = * by larger value
-//     torus.position.y = Math.sin(t/400) * 30;
-//     torus.position.z = Math.sin(t/500) * 30;
-//     torus.rotation.x = t/200;
-// }
-
-// document.body.onscroll = moveObject; // bind function to scroll event
-
-// moveObject();
-
 document.addEventListener('mousemove', animateParticles);
 
 let mouseX = 0;
