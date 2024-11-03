@@ -1,0 +1,29 @@
+html,
+body,
+#particles {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#particles {
+    overflow: hidden;
+}
+
+#particles canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+/* canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+#bg {
+    width: 100vw;
+    height: 100vh;
+}
